@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<form>
+    <table>
+        <tr>
+            <th colspan="4" style="border: ridge;text-align: left">MayTinh</th>
+        </tr>
+        <tr>
+            <th colspan="4"><input id="result" type="text"></th>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="add1(this.value)"></td>
+            <td><input type="button" value="2" onclick="add1(this.value)"></td>
+            <td><input type="button" value="3" onclick="add1(this.value)"></td>
+            <td><input type="button" value="+" onclick="add1(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="add1(this.value)"></td>
+            <td><input type="button" value="5" onclick="add1(this.value)"></td>
+            <td><input type="button" value="6" onclick="add1(this.value)"></td>
+            <td><input type="button" value="-" onclick="add1(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="add1(this.value)"></td>
+            <td><input type="button" value="8" onclick="add1(this.value)"></td>
+            <td><input type="button" value="9" onclick="add1(this.value)"></td>
+            <td><input type="button" value="*" onclick="add1(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="c"></td>
+            <td><input type="button" value="0" onclick="add1(this.value)"></td>
+            <td><input type="button" value="=" onclick="step1()"></td>
+            <td><input type="button" value="/" onclick="add1(this.value)"></td>
+        </tr>
+
+    </table>
+</form>
+<script>
+    function add1(value) {
+        document.getElementById('result').value += value;
+        console.log(value)
+        eval()
+    }
+
+    function step1() {
+        let result = eval(document.getElementById('result').value);
+        document.getElementById('result').value = eval(document.getElementById('result').value);
+    }
+
+</script>
+</body>
+</html>

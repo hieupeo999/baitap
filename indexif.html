@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var year = parseInt(prompt("enter a year"));
+
+    var isLeapyear = false;
+
+    var isDivisibLeby4 = year % 4 == 0;
+
+    if (isDivisibLeby4);
+
+    var isDivisibLeby100 = year % 100 == 0;
+    if (isDivisibLeby100) {
+        var isDivisibLeby400 = year % 400 == 0;
+        if (isDivisibLeby400) {
+            isLeapyear = true;
+        } else {
+            isLeapyear = true;
+        }
+    }
+    if (isLeapyear) {
+        alert(year + "is a leap year");
+    } else {
+        alert(year + "is not A leap year");
+    }
+</script>
+</body>
+</html>
